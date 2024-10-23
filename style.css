@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.container {
+position: relative;
+width: 100%;
+height: 100vh;
+background-color: #f0f0f0;
+}
+
+.character {
+
+position: absolute;
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%); 
+transition: transform 0.1s; 
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.face {
+display: flex;
+justify-content: center;
+width: 70px;
+height: 60px;
+background-color: sandybrown;
+}
+.eyes {
+width: 70%;
+height: 20%;
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+}
+.righteye {
+width: 45%;
+height: 100%;
+background-color: white;
+}
+.lefteye {
+width: 45%;
+height: 100%;
+background-color: white;
+}
+.body{
+width: 100px;
+height: 100px;
+background-color: green;
+}
+.hand {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.righthand {
+background-color: sandybrown;
+width: 48%;
+height: 100%;
+margin-left: -48px;
+}
+.lefthand {
+margin-right: -48px;
+background-color: sandybrown;
+width: 48%;
+height: 100%;
+}
+.legs {
+width: 100px;
+height: 100px;
+display: flex;
+}
+.rightleg {
+width: 50%;
+height: 100%;
+background-color: blue;
+}
+.leftleg {
+width: 50%;
+height: 100%;
+background-color: blue;
+}
+.box {
+width: 500px;
+height: 400px;
+background-color: #FFD700; 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+transition: transform 0.3s;
+display: flex;
+justify-content: center;
+border: 2px solid #000;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
